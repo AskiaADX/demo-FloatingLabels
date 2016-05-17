@@ -12,7 +12,15 @@
         }
         body {
             background-color: #2e4154;
+            color: #AAA;
             font-family: "Open Sans", sans-serif;
+            padding: 10vh 10vw;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 1.05rem;
         }
 
         form {
@@ -49,7 +57,7 @@
             padding: 5px 10px;
             text-align: left;
             transition: all 0.33s;
-            width: 400px;
+            width: 500px;
         }
 
         label input:focus {
@@ -76,14 +84,20 @@
 </head>
 
 <body>
+    <h1>Floating Labels</h1>
+    <h2>An ADC demo for open-ended &amp; numeric questions</h2>
     <form>
         <label>
             <input type="text" required />
-            <div class="floating-label">First name</div>
+            <div class="floating-label">What is your quest?</div>
         </label>
         <label>
             <input type="text" required />
-            <div class="floating-label">Last name</div>
+            <div class="floating-label">What is your favorite colour?</div>
+        </label>
+        <label>
+            <input type="text" required />
+            <div class="floating-label">What is the capital of Assyria?</div>
         </label>
     </form>
 </body>
